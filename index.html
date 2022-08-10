@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bee6afc522.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Sobre Mi</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact">Contactame</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Asistente Contable</p>
+                <h1>Hola, Soy <span>Danna</span><br>Uribe de Colombia</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre Mi</h1>
+                    <p>Cuento con casi 10 años de experiencia en el área contable, desde la digitacion de comprobantes
+                        contables: compras, ventas, egresos,
+                        recibos de caja preparación de nomina y seguridad social. De igual forma poseo bases en la
+                        preparación y presentación de impuestos
+                        a nivel nacional y local, tales como son retefuente, iva ya sea cuatrimestral o bimestral;
+                        retenciones de industria y comercio,
+                        declaraciones de industria y comercio anuales o periodicas en diferentes municipios del
+                        territorio nacional.</p>
+                        <a href="HV-HTML5-CSS3-JS/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
+                        <p class="tab-links" onclick="opentab('education')">Educación</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Contable</span><br>World
+                                Office<br>Siigo<br>Dataico<br>Alegra<br>Xubio<br>Helisa</li>
+                            <li><span>Software Ofimatico</span><br>Suit de Microsoft Office</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Mayo 2019 - Actualidad</span><br>CHEA INGENIERIA SAS</li>
+                            <li><span>Enero 2015 - Abril 2019</span><br>APRINCO LTDA</li>
+                            <li><span>2013 - Actualidad</span><br>SERPRORIENTE SAS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Contaduria Publica</span><br>6° Semestre</li>
+                            <li><span>Tecnico en procesos contables</span><br>Graduada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----services------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Mis Servicios</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-regular fa-money-bill-1"></i>
+                    <h2>Especialista en tributación</h2>
+                    <p>Retefuente, Reteiva, Reteica, IVA, ICA, Renta, Persona Natural y Persona Juridica, Exógena,
+                        Inpoconsumo, Declaración, Régimen simple.</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-handshake"></i>
+                    <h2>Contabilidad Gerencial</h2>
+                    <p>Toma de decisiones mediante informes, Presentar estados financieros periodicamente.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <h2>Auditoria</h2>
+                    <p>Gestionar el correcto funcionamiento de una empresa a nivel contable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mi Portafolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>PSeint</h3>
+                        <p>Codigos resuelto a base de software en pseudocodigo</p>
+                        <a href="pseint.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Java</h3>
+                        <p>Codigos resuelto a base de Java en un IDLE Visual Studio Code</p>
+                        <a href="java.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contactame</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> julissauribeo0120@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 317-5427299</p>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Tu Nombre" required>
+                        <input type="email" name="email" placeholder="Tu Correo" required>
+                        <textarea name="Message" rows="6" placeholder="Tu Mensaje"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Danna. Hecho con HTML, CSS y JS</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+
+</html>

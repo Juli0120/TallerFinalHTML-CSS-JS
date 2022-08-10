@@ -1,0 +1,126 @@
+.theme-pink{
+    --background: #B93160;
+    --border: #D75281;
+    --shadow: whitesmoke;
+    --buttoncolor: #EED180;
+    --buttoncoloronclick: #FFF89C;
+    --hcolor1: #f6e0a6;
+    --hcolor2: #ddcc9e;
+    --hcolor3: #b09e6d;
+    --hcolor4: #FFF89C;
+}
+
+.theme-green{
+    --background: #F0EABE;
+    --border: #21E1E1;
+    --shadow: grey;
+    --buttoncolor: #3B9AE1;
+    --buttoncoloronclick: #3120E0;
+    --hcolor1: #5fade9;
+    --hcolor2: #75b3e3;
+    --hcolor3: #398ed0;
+    --hcolor4: #98c7ec;
+}
+
+.theme-blue{
+    --background: #1C3879;
+    --border: #607EAA;
+    --shadow: white;
+    --buttoncolor: #EAE3D2;
+    --buttoncoloronclick: #F9F5EB;
+    --hcolor1: #f0ece3;
+    --hcolor2: #e1ded6;
+    --hcolor3: #9c9b97;
+    --hcolor4: #fdfbf6;
+}
+
+body {
+    background-color: var(--background);
+    width: 1024px;
+    text-align: center;
+}
+
+img {
+    border: 10px solid var(--border);
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px var(--shadow);
+}
+
+header a {
+    background-color: var(--background);
+    border: 5px solid var(--background);
+    border-radius: 4px;
+}
+
+header a:hover {
+    background-color: var(--background);
+    border: 5px solid var(--background);
+    border-radius: 4px;
+}
+
+select{
+    color: var(--border);
+    background-color: var(--buttoncolor);
+    border: 5px solid var(--buttoncolor);
+    border-radius: 4px;
+}
+
+button {
+    color: var(--border);
+    background-color: var(--buttoncolor);
+    border: 5px solid var(--buttoncolor);
+    border-radius: 4px;
+}
+
+button:hover {
+    color: var(--border);
+    background-color: var(--buttoncoloronclick);
+    border: 5px solid var(--buttoncoloronclick);
+    border-radius: 4px;
+}
+
+h4 {
+    color: var(--hcolor4);
+}
+
+h3 {
+    color: var(--hcolor3);
+}
+
+h2 {
+    color: var(--hcolor2);
+}
+
+h1{
+    color: var(--hcolor1);
+}
+
+.btn-item{
+    padding: 0px;
+    color: var(--hcolor2);
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.item-content {
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.active + .item-content{
+    max-height: 1000px;
+    padding: 10px;
+    opacity: 1;
+}
+
+.btn-item:after{
+    content: '\002b';
+    float: right;
+}
+
+.btn-item.active:after{
+    content: '\02212';
+    float: right;
+}
